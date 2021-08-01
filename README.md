@@ -10,7 +10,7 @@
 const raphaelVieira = {
   pronouns: "he" | "his",
   code: [Javascript, Typescript, HTML, CSS],
-  tools: [React, Node, Storybook, Styled-Components, Jest, Testing-library,  docker, devOps, Gulp, Webpack],
+  tools: ['React', 'Node', 'Storybook', 'Styled-Components', 'Jest', 'Testing-library',  'Docker', 'DevOps', 'Gulp', 'Webpack'],
 }
 ```
 
