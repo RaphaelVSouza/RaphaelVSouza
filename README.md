@@ -1,7 +1,7 @@
 ### Hi there 👋
 
 <h2> I'm Raphael Vieira! <img src="https://media.giphy.com/media/S8kcDWOvua4l6lJ0Az/source.gif" width="50"></h2>
-<img align='right' src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="230">
+<img align='left' src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="230">
 <br/>
 
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...  
