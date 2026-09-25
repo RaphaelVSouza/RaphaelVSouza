@@ -1,79 +1,66 @@
-
 # Raphael Vieira
 
-Senior-Level Fullstack Engineer focused on scalable systems, clean architecture and business-driven software.
+Senior Fullstack Engineer — .NET · React/Next.js · Distributed Systems · AI Agent Orchestration
 
-I design and build modern web platforms using React, Next.js and .NET, with strong emphasis on cloud infrastructure, performance and long-term maintainability.
-
-📍 Brazil | Open to Remote International Opportunities
+Brazil · Open to remote international roles (B2B or full-time)
 
 ---
 
-## What I Do
+## About
 
-• Architect and develop fullstack applications  
-• Design RESTful APIs and backend services with .NET  
-• Build modern, performant frontends with React / Next.js  
-• Deploy and manage infrastructure using Docker and AWS  
-• Structure systems using Clean Architecture & SOLID principles  
+I build backend services in .NET, web frontends in React/Next.js, and the infrastructure that runs them.
+Recently I've been working on a narrower problem: making coding agents (Claude Code, Codex, OpenCode, Antigravity CLI) safe to run unattended, with enforced scope, auditable changes and predictable cost.
 
-I care about writing code that survives growth.
+## Focus areas
 
----
-
-## Core Stack
-
-### Frontend
-- React
-- Next.js
-- TypeScript
-- Vite
-- Modular CSS / Sass
-
-### Backend
-- .NET 8 / ASP.NET Core
-- Entity Framework
-- Authentication & Authorization
-- REST APIs
-
-### Infrastructure
-- Docker & Docker Compose
-- Terraform (Infrastructure as Code)
-- AWS (EC2, RDS, S3)
-- Linux environments
-
-### Databases & Messaging
-- PostgreSQL
-- SQL Server
-- Redis
-- RabbitMQ
+- **Backend:** ASP.NET Core APIs and background workers, Clean Architecture, DDD, EF Core
+- **Frontend:** React, Next.js, TypeScript
+- **Distributed systems:** RabbitMQ, event-driven design, Redis, PostgreSQL / SQL Server
+- **Infrastructure:** Docker, Terraform, AWS (EC2, RDS, S3), CI/CD, Linux
+- **Agent systems:** multi-agent orchestration, sandboxing, tool whitelisting, prompt-cache optimization
 
 ---
 
-## Engineering Focus
+## Featured project
 
-- Scalable Architecture
-- Business-Oriented Development
-- Performance Optimization
-- Code Maintainability
-- Long-Term System Thinking
+### [agent-governance-kit](https://github.com/RaphaelVSouza/agent-governance-kit)
 
----
+Runner-agnostic framework for running coding agents with enforced boundaries.
 
-## Currently Deepening Knowledge In
+**Problem:** coding agents drift out of scope, collide when run in parallel, and waste tokens on cache misses.
 
-- Distributed Systems
-- Cloud Architecture Patterns
-- Observability & Monitoring
-- AI-assisted Development Workflows
+**How it addresses it:**
 
----
+- **Scope enforcement** — git state is audited before and after each run; AST-level checks reject edits outside the declared boundary.
+- **Parallel execution** — task queue on transactional `node:sqlite` with process-level mutexes and stale-claim reclamation. No external dependencies.
+- **Cache efficiency** — prompts ordered static-to-volatile for byte-exact KV cache reuse; per-task reasoning-effort control.
+- **Single agent definition, multiple runners** — canonical Markdown definitions compiled to Claude Code tool whitelists, OpenCode permissions and AGY agent schemas.
 
-## Let's Connect
-
-LinkedIn: linkedin.com/in/raphaelvieiradev  
-GitHub: github.com/raphaelvieiradev  
+Supported runners: Claude Code, OpenAI Codex, OpenCode, Antigravity CLI, custom.
 
 ---
 
-> Great software is built with technical excellence and business awareness.
+## Stack
+
+| Area | Technologies |
+| :--- | :--- |
+| Backend | C#, .NET 8/9, ASP.NET Core, EF Core, LINQ |
+| Frontend | React, Next.js, TypeScript, Vite, Tailwind CSS, Sass |
+| Data | PostgreSQL, SQL Server, Redis, SQLite |
+| Messaging | RabbitMQ |
+| Infra | Docker, Docker Compose, Terraform, AWS, GitHub Actions, Bash |
+| Testing | Unit, integration and mutation testing |
+
+---
+
+## Principles
+
+- Explicit boundaries and low coupling over short-term shortcuts.
+- Agents are treated as untrusted contributors: every change is scoped, verified and auditable.
+- Technical decisions are weighed against operational cost and business impact.
+
+---
+
+## Contact
+
+[LinkedIn](https://linkedin.com/in/raphaelvieiradev) · [Email](mailto:raphael5254@outlook.com)
