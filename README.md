@@ -15,8 +15,8 @@ Recently I've been working on a narrower problem: making coding agents (Claude C
 
 - **Backend:** ASP.NET Core APIs and background workers, Clean Architecture, DDD, EF Core
 - **Frontend:** React, Next.js, TypeScript
-- **Distributed systems:** RabbitMQ, event-driven design, Redis, PostgreSQL / SQL Server
-- **Infrastructure:** Docker, Terraform, AWS (EC2, RDS, S3), CI/CD, Linux
+- **Data and integration:** SQL Server, Redis, SQLite, scheduled jobs (Quartz.NET), SSO with SAML2 and JWT
+- **Infrastructure:** Docker, Cloudflare (Workers, D1, R2), CI/CD, Linux
 - **Agent systems:** multi-agent orchestration, sandboxing, tool whitelisting, prompt-cache optimization
 
 ---
@@ -37,12 +37,12 @@ Offline-first PWA that turns a produce supplier's promotional WhatsApp message i
 
 | Area | Technologies |
 | :--- | :--- |
-| Backend | C#, .NET 8/9, ASP.NET Core, EF Core, LINQ |
+| Backend | C#, .NET 8/10, ASP.NET Core, EF Core, LINQ, Python |
 | Frontend | React, Next.js, TypeScript, Vite, Tailwind CSS, Sass |
-| Data | PostgreSQL, SQL Server, Redis, SQLite |
-| Messaging | RabbitMQ |
-| Infra | Docker, Docker Compose, Terraform, AWS, GitHub Actions, Bash |
-| Testing | Unit, integration and mutation testing |
+| Data | SQL Server, Redis, SQLite, Cloudflare D1 |
+| Auth | SAML2, JWT, Okta |
+| Infra | Docker, Docker Compose, Cloudflare Workers, GitHub Actions, Bitbucket Pipelines, PowerShell |
+| Testing | xUnit, Vitest, Playwright (unit, integration and end-to-end) |
 
 ---
 
