@@ -13,7 +13,8 @@ Recently I've been working on a narrower problem: making coding agents (Claude C
 
 ## Focus areas
 
-- **Backend:** ASP.NET Core APIs and background workers, Clean Architecture, DDD, EF Core
+- **Backend:** ASP.NET Core APIs and background workers, layered services, EF Core
+- **Architecture:** modular designs with dependency boundaries enforced by lint in CI (eslint-plugin-boundaries, import-linter), ports and adapters where they pay off, numbered ADRs
 - **Frontend:** React, Next.js, TypeScript
 - **Data and integration:** SQL Server, Redis, SQLite, scheduled jobs (Quartz.NET), SSO with SAML2 and JWT
 - **Infrastructure:** Docker, Cloudflare (Workers, D1, R2), CI/CD, Linux
