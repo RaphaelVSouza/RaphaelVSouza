@@ -15,28 +15,21 @@ Recently I've been working on a narrower problem: making coding agents (Claude C
 
 - **Backend:** ASP.NET Core APIs and background workers, Clean Architecture, DDD, EF Core
 - **Frontend:** React, Next.js, TypeScript
-- **Distributed systems:** RabbitMQ, event-driven design, Redis, PostgreSQL / SQL Server
-- **Infrastructure:** Docker, Terraform, AWS (EC2, RDS, S3), CI/CD, Linux
+- **Data and integration:** SQL Server, Redis, SQLite, scheduled jobs (Quartz.NET), SSO with SAML2 and JWT
+- **Infrastructure:** Docker, Cloudflare (Workers, D1, R2), CI/CD, Linux
 - **Agent systems:** multi-agent orchestration, sandboxing, tool whitelisting, prompt-cache optimization
 
 ---
 
 ## Featured project
 
-### [agent-governance-kit](https://github.com/RaphaelVSouza/agent-governance-kit)
+### [pedido-hortifruti](https://github.com/RaphaelVSouza/pedido-hortifruti)
 
-Runner-agnostic framework for running coding agents with enforced boundaries.
+Offline-first PWA that turns a produce supplier's promotional WhatsApp message into a formatted order, ready to send back. [Live demo](https://raphaelvsouza.github.io/pedido-hortifruti/)
 
-**Problem:** coding agents drift out of scope, collide when run in parallel, and waste tokens on cache misses.
-
-**How it addresses it:**
-
-- **Scope enforcement** — git state is audited before and after each run; AST-level checks reject edits outside the declared boundary.
-- **Parallel execution** — task queue on transactional `node:sqlite` with process-level mutexes and stale-claim reclamation. No external dependencies.
-- **Cache efficiency** — prompts ordered static-to-volatile for byte-exact KV cache reuse; per-task reasoning-effort control.
-- **Single agent definition, multiple runners** — canonical Markdown definitions compiled to Claude Code tool whitelists, OpenCode permissions and AGY agent schemas.
-
-Supported runners: Claude Code, OpenAI Codex, OpenCode, Antigravity CLI, custom.
+- **No backend, no runtime dependencies** — vanilla JavaScript with a local parser; data stays in the browser.
+- **Typed without a build step** — JSDoc annotations checked by the TypeScript compiler in CI.
+- **Tested and documented** — corpus-based parser tests, Playwright end-to-end suite on GitHub Actions, and numbered ADRs for every relevant decision.
 
 ---
 
@@ -44,12 +37,12 @@ Supported runners: Claude Code, OpenAI Codex, OpenCode, Antigravity CLI, custom.
 
 | Area | Technologies |
 | :--- | :--- |
-| Backend | C#, .NET 8/9, ASP.NET Core, EF Core, LINQ |
+| Backend | C#, .NET 8/10, ASP.NET Core, EF Core, LINQ, Python |
 | Frontend | React, Next.js, TypeScript, Vite, Tailwind CSS, Sass |
-| Data | PostgreSQL, SQL Server, Redis, SQLite |
-| Messaging | RabbitMQ |
-| Infra | Docker, Docker Compose, Terraform, AWS, GitHub Actions, Bash |
-| Testing | Unit, integration and mutation testing |
+| Data | SQL Server, Redis, SQLite, Cloudflare D1 |
+| Auth | SAML2, JWT, Okta |
+| Infra | Docker, Docker Compose, Cloudflare Workers, GitHub Actions, Bitbucket Pipelines, PowerShell |
+| Testing | xUnit, Vitest, Playwright (unit, integration and end-to-end) |
 
 ---
 
