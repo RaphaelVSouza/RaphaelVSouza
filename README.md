@@ -23,20 +23,13 @@ Recently I've been working on a narrower problem: making coding agents (Claude C
 
 ## Featured project
 
-### [agent-governance-kit](https://github.com/RaphaelVSouza/agent-governance-kit)
+### [pedido-hortifruti](https://github.com/RaphaelVSouza/pedido-hortifruti)
 
-Runner-agnostic framework for running coding agents with enforced boundaries.
+Offline-first PWA that turns a produce supplier's promotional WhatsApp message into a formatted order, ready to send back. [Live demo](https://raphaelvsouza.github.io/pedido-hortifruti/)
 
-**Problem:** coding agents drift out of scope, collide when run in parallel, and waste tokens on cache misses.
-
-**How it addresses it:**
-
-- **Scope enforcement** — git state is audited before and after each run; AST-level checks reject edits outside the declared boundary.
-- **Parallel execution** — task queue on transactional `node:sqlite` with process-level mutexes and stale-claim reclamation. No external dependencies.
-- **Cache efficiency** — prompts ordered static-to-volatile for byte-exact KV cache reuse; per-task reasoning-effort control.
-- **Single agent definition, multiple runners** — canonical Markdown definitions compiled to Claude Code tool whitelists, OpenCode permissions and AGY agent schemas.
-
-Supported runners: Claude Code, OpenAI Codex, OpenCode, Antigravity CLI, custom.
+- **No backend, no runtime dependencies** — vanilla JavaScript with a local parser; data stays in the browser.
+- **Typed without a build step** — JSDoc annotations checked by the TypeScript compiler in CI.
+- **Tested and documented** — corpus-based parser tests, Playwright end-to-end suite on GitHub Actions, and numbered ADRs for every relevant decision.
 
 ---
 
