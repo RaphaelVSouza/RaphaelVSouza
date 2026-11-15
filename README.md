@@ -1,6 +1,6 @@
 # Raphael Vieira
 
-Senior Fullstack Engineer — .NET · React/Next.js · Distributed Systems · AI Agent Orchestration
+Senior Fullstack Engineer — .NET · React/Next.js · Cloudflare Workers · AI Agent Orchestration
 
 Brazil · Open to remote international roles (B2B or full-time)
 
@@ -13,7 +13,8 @@ Recently I've been working on a narrower problem: making coding agents (Claude C
 
 ## Focus areas
 
-- **Backend:** ASP.NET Core APIs and background workers, Clean Architecture, DDD, EF Core
+- **Backend:** ASP.NET Core APIs and background workers, layered services, EF Core
+- **Architecture:** modular designs with dependency boundaries enforced by lint in CI (eslint-plugin-boundaries, import-linter), ports and adapters where they pay off, numbered ADRs
 - **Frontend:** React, Next.js, TypeScript
 - **Data and integration:** SQL Server, Redis, SQLite, scheduled jobs (Quartz.NET), SSO with SAML2 and JWT
 - **Infrastructure:** Docker, Cloudflare (Workers, D1, R2), CI/CD, Linux
@@ -41,7 +42,7 @@ Offline-first PWA that turns a produce supplier's promotional WhatsApp message i
 | Frontend | React, Next.js, TypeScript, Vite, Tailwind CSS, Sass |
 | Data | SQL Server, Redis, SQLite, Cloudflare D1 |
 | Auth | SAML2, JWT, Okta |
-| Infra | Docker, Docker Compose, Cloudflare Workers, GitHub Actions, Bitbucket Pipelines, PowerShell |
+| Infra | Docker, Docker Compose, Cloudflare Workers, GitHub Actions, Bitbucket Pipelines, PowerShell, Bash |
 | Testing | xUnit, Vitest, Playwright (unit, integration and end-to-end) |
 
 ---
