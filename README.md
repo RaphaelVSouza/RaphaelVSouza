@@ -1,6 +1,6 @@
 # Raphael Vieira
 
-Senior Fullstack Engineer — .NET · React/Next.js · Distributed Systems · AI Agent Orchestration
+Senior Fullstack Engineer — .NET · React/Next.js · Cloudflare Workers · AI Agent Orchestration
 
 Brazil · Open to remote international roles (B2B or full-time)
 
@@ -41,7 +41,7 @@ Offline-first PWA that turns a produce supplier's promotional WhatsApp message i
 | Frontend | React, Next.js, TypeScript, Vite, Tailwind CSS, Sass |
 | Data | SQL Server, Redis, SQLite, Cloudflare D1 |
 | Auth | SAML2, JWT, Okta |
-| Infra | Docker, Docker Compose, Cloudflare Workers, GitHub Actions, Bitbucket Pipelines, PowerShell |
+| Infra | Docker, Docker Compose, Cloudflare Workers, GitHub Actions, Bitbucket Pipelines, PowerShell, Bash |
 | Testing | xUnit, Vitest, Playwright (unit, integration and end-to-end) |
 
 ---
